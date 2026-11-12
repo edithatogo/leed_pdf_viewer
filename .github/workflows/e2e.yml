@@ -8,7 +8,9 @@ on:
 jobs:
   e2e:
     name: End-to-End Tests
-    runs-on: ubuntu-latest
+    # Playwright Chromium does not yet support Ubuntu 26.04 (ubuntu-latest).
+    # Pin a supported runner image; retain all browser and E2E checks.
+    runs-on: ubuntu-24.04
     env:
       PUBLIC_POSTHOG_KEY: ${{ vars.PUBLIC_POSTHOG_KEY }}
       PUBLIC_APPWRITE_ENDPOINT: ${{ vars.PUBLIC_APPWRITE_ENDPOINT }}
