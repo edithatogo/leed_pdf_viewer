@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: If you use this fork, please cite it using the metadata in this file. For upstream
+  work, also follow the citation guidance at https://github.com/rudi-q/leed_pdf_viewer.
+title: Leed PDF (edithatogo fork)
+authors:
+- name: Leed PDF project
+repository-code: https://github.com/edithatogo/leed_pdf_viewer
